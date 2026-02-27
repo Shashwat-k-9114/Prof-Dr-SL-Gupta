@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prof. (Dr.) S.L. Gupta | Senior Academic Leader · Dean · Director · Research Scholar</title>
+  <meta name="description" content="Prof. (Dr.) S.L. Gupta — Three decades of transformative academic leadership across India and the Gulf. Dean, Director, Research Mentor, and Author of 16 published works." />
+  <meta name="keywords" content="Prof SL Gupta, Dr SL Gupta, Birla Institute of Technology, academic leadership, marketing research, Dean, Director" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prof. (Dr.) S.L. Gupta | Academic Leader & Research Scholar" />
+  <meta property="og:description" content="Three decades of transformative academic leadership. Dean · Director · Research Mentor · Author" />
+  <meta property="og:type" content="profile" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prof. (Dr.) S.L. Gupta",
+    "jobTitle": "Professor, Birla Institute of Technology (Deemed University)",
+    "alumniOf": ["CCS University Meerut", "University of Rajasthan"],
+    "knowsAbout": ["Marketing Research", "Sales Management", "Business Research", "Retail Management"],
+    "email": "drslgupta@gmail.com"
+  }
+    // Modal logic
+    function openModal(modal) {
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      // focus the close button for accessibility
+      modal.querySelector('.modal-close').focus();
+    }
+
+    function closeModal(modal) {
+      modal.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    const pubsModal = document.getElementById('pubsModal');
+    const booksModal = document.getElementById('booksModal');
+
+    document.getElementById('openPubsModal').addEventListener('click', () => openModal(pubsModal));
+    document.getElementById('openBooksModal').addEventListener('click', () => openModal(booksModal));
+
+    [pubsModal, booksModal].forEach(modal => {
+      // Close on overlay or close button click
+      modal.addEventListener('click', e => {
+        if (e.target.hasAttribute('data-close')) closeModal(modal);
+      });
+      // Close on Escape key
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && !modal.hidden) closeModal(modal);
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* =====================
+       DESIGN SYSTEM
+    ===================== */
+    :root {
+      --ivory: #faf8f4;
+      --ivory-2: #f2ede6;
+      --navy: #0f1f3d;
+      --navy-mid: #1a3260;
+      --gold: #b89a5e;
+      --gold-light: #d4b98a;
+      --charcoal: #2c2c2c;
+      --muted: #6b6b6b;
+      --muted-2: #9a9a9a;
+      --rule: rgba(15, 31, 61, 0.12);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Jost', system-ui, sans-serif;
+      --max: 1140px;
+      --section-gap: 120px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      background: var(--ivory);
+      color: var(--charcoal);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* =====================
+       TYPOGRAPHY
+    ===================== */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--navy);
+    }
+
+    .eyebrow {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      max-width: 60px;
+      height: 1px;
+      background: var(--gold-light);
+    }
+
+    /* =====================
+       LAYOUT
+    ===================== */
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2.5rem;
+    }
+
+    section {
+      padding: var(--section-gap) 0;
+    }
+
+    section:nth-child(even) {
+      background: var(--ivory-2);
+    }
+
+    /* =====================
+       NAVIGATION
+    ===================== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(250, 248, 244, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+      transition: box-shadow 0.3s;
+    }
+
+    nav.scrolled {
+      box-shadow: 0 2px 24px rgba(15, 31, 61, 0.06);
+    }
+
+    .nav-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2.2rem;
+    }
+
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--navy); }
+
+    .nav-cta {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-decoration: none;
+      border: 1px solid var(--gold-light);
+      padding: 0.55rem 1.2rem;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--navy);
+    }
+
+    /* =====================
+       HERO
+    ===================== */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      background: var(--ivory);
+    }
+
+    .hero-bg-line {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45%;
+      height: 100%;
+      border-left: 1px solid var(--rule);
+      pointer-events: none;
+    }
+
+    .hero-bg-number {
+      position: absolute;
+      right: 4%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--serif);
+      font-size: clamp(10rem, 22vw, 18rem);
+      font-weight: 300;
+      color: rgba(15, 31, 61, 0.04);
+      pointer-events: none;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 140px 0 80px;
+    }
+
+    .hero-pre {
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      font-weight: 300;
+      color: var(--navy);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .hero-name em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-title {
+      font-family: var(--sans);
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      margin-bottom: 2.5rem;
+      line-height: 1.9;
+    }
+
+    .hero-title strong {
+      color: var(--navy);
+      font-weight: 500;
+    }
+
+    .hero-intro {
+      max-width: 560px;
+      font-family: var(--serif);
+      font-size: 1.22rem;
+      color: var(--charcoal);
+      line-height: 1.75;
+      margin-bottom: 3rem;
+      font-weight: 300;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-num {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: var(--navy);
+      line-height: 1;
+      display: block;
+    }
+
+    .hero-stat-label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+      display: block;
+      margin-top: 0.4rem;
+    }
+
+    .hero-divider {
+      width: 1px;
+      height: 50px;
+      background: var(--rule);
+      align-self: center;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+      background: var(--navy);
+      padding: 1rem 2.2rem;
+      transition: background 0.25s;
+    }
+    .btn-primary:hover { background: var(--navy-mid); }
+
+    .btn-ghost {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+      padding: 1rem 2.2rem;
+      transition: all 0.25s;
+    }
+    .btn-ghost:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* =====================
+       IMPACT BAR
+    ===================== */
+    #impact-bar {
+      background: var(--navy);
+      padding: 0;
+    }
+
+    .impact-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .impact-item {
+      flex: 1;
+      min-width: 140px;
+      padding: 2.8rem 2rem;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      position: relative;
+    }
+    .impact-item:last-child { border-right: none; }
+
+    .impact-num {
+      font-family: var(--serif);
+      font-size: 2.6rem;
+      font-weight: 300;
+      color: var(--gold-light);
+      display: block;
+      line-height: 1;
+    }
+
+    .impact-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      display: block;
+      margin-top: 0.6rem;
+    }
+
+    /* =====================
+       BIOGRAPHY
+    ===================== */
+    #biography .bio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .bio-sidebar h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .bio-sidebar .gold-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    .bio-sidebar p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+
+    .bio-main p {
+      font-family: var(--serif);
+      font-size: 1.18rem;
+      line-height: 1.85;
+      color: var(--charcoal);
+      margin-bottom: 1.6rem;
+    }
+
+    .bio-main p:first-child::first-letter {
+      font-size: 3.5em;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.08em;
+      margin-top: 0.1em;
+      color: var(--gold);
+      font-family: var(--serif);
+      font-weight: 300;
+    }
+
+    .credentials-list {
+      list-style: none;
+      margin-top: 2rem;
+    }
+
+    .credentials-list li {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--charcoal);
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+    }
+
+    .cred-degree {
+      font-weight: 500;
+      color: var(--navy);
+    }
+
+    .cred-year {
+      font-size: 0.72rem;
+      color: var(--muted-2);
+      white-space: nowrap;
+    }
+
+    /* =====================
+       LEADERSHIP
+    ===================== */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 3.5rem 2.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 8px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translateX(50%);
+    }
+
+    .timeline-period {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-role {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      font-weight: 400;
+    }
+
+    .timeline-org {
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      line-height: 1.8;
+      max-width: 680px;
+    }
+
+    /* =====================
+       RESEARCH & PUBLICATIONS
+    ===================== */
+    .pub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      margin-top: 3rem;
+    }
+
+    .pub-card {
+      background: white;
+      padding: 2.4rem;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s;
+    }
+
+    .pub-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .pub-card:hover {
+      box-shadow: 0 4px 32px rgba(15, 31, 61, 0.08);
+      z-index: 1;
+      position: relative;
+    }
+
+    .pub-year {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+
+    .pub-title {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--navy);
+      line-height: 1.45;
+      margin-bottom: 0.6rem;
+    }
+
+    .pub-journal {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .pub-tag {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold-light);
+      padding: 0.2rem 0.6rem;
+      margin-top: 0.8rem;
+    }
+
+    .view-all-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--navy);
+      text-decoration: none;
+      margin-top: 2.5rem;
+      transition: gap 0.2s;
+    }
+    .view-all-link:hover { gap: 1.2rem; }
+    .view-all-link::after {
+      content: '→';
+      font-size: 1rem;
+    }
+
+    /* =====================
+       BOOKS
+    ===================== */
+    .books-featured {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .book-card {
+      border: 1px solid var(--rule);
+      padding: 2rem;
+      position: relative;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .book-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .book-card:hover {
+      border-color: var(--gold-light);
+      box-shadow: 0 8px 40px rgba(15, 31, 61, 0.06);
+    }
+
+    .book-number {
+      font-family: var(--serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      color: var(--rule);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .book-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--navy);
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+    }
+
+    .book-publisher {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .book-isbn {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      color: var(--muted-2);
+      margin-top: 0.4rem;
+    }
+
+    /* =====================
+       DOCTORAL SUPERVISION
+    ===================== */
+    .scholars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 3rem;
+    }
+
+    .scholar-card {
+      background: white;
+      padding: 2rem;
+      border-left: 3px solid transparent;
+      transition: border-color 0.3s;
+      opacity: 0;
+      transform: translateX(-12px);
+      transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.3s;
+    }
+
+    .scholar-card.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .scholar-card:hover {
+      border-left-color: var(--gold);
+    }
+
+    .scholar-name {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+
+    .scholar-topic {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+
+    .scholar-year {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* =====================
+       FUNDED PROJECTS
+    ===================== */
+    .projects-list {
+      margin-top: 3rem;
+    }
+
+    .project-item {
+      padding: 2.2rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 2rem;
+      align-items: start;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .project-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-num {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      color: var(--rule);
+      font-weight: 300;
+      line-height: 1;
+      padding-top: 4px;
+    }
+
+    .project-body {}
+
+    .project-funder {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .project-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--navy);
+      line-height: 1.4;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-year {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .project-amount {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      color: var(--navy);
+      font-weight: 300;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .project-amount small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      color: var(--muted-2);
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+
+    /* =====================
+       CONFERENCES
+    ===================== */
+    .conf-two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-top: 3rem;
+    }
+
+    .conf-col h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 1.8rem;
+      font-weight: 400;
+    }
+
+    .conf-item {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .conf-item.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .conf-location {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+
+    .conf-title {
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      line-height: 1.55;
+    }
+
+    /* =====================
+       AWARDS
+    ===================== */
+    .awards-featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+      margin-top: 3rem;
+    }
+
+    .award-card {
+      background: var(--navy);
+      padding: 2.8rem 2.2rem;
+      opacity: 0;
+      transform: scale(0.97);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .award-card.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .award-year-badge {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1.2rem;
+    }
+
+    .award-title {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: #fff;
+      line-height: 1.4;
+      margin-bottom: 0.8rem;
+    }
+
+    .award-body {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+    }
+
+    /* =====================
+       MEMBERSHIPS
+    ===================== */
+    .membership-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 3rem;
+      font-family: var(--sans);
+    }
+
+    .membership-table tr {
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .membership-table tr.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .membership-table td {
+      padding: 1.2rem 1rem;
+      font-size: 0.85rem;
+      color: var(--charcoal);
+      vertical-align: top;
+    }
+
+    .membership-table td:first-child {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--navy);
+      width: 50%;
+      font-weight: 400;
+    }
+
+    .membership-table td:last-child {
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    /* =====================
+       INTERNATIONAL
+    ===================== */
+    .intl-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+
+    .intl-item {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .intl-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 4px;
+      height: 4px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+
+    .intl-item h4 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+      font-weight: 400;
+    }
+
+    .intl-item p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* =====================
+       CONTACT
+    ===================== */
+    #contact {
+      background: var(--navy);
+    }
+
+    #contact .eyebrow { color: var(--gold-light); }
+    #contact h2 { color: #fff; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .contact-intro {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    .contact-details {
+      margin-top: 3rem;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .contact-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-icon svg {
+      width: 14px;
+      height: 14px;
+      stroke: var(--gold-light);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .contact-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-value {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .contact-value a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+    }
+    .contact-value a:hover { color: var(--gold-light); }
+
+    .contact-form-note {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 2.5rem;
+    }
+
+    .contact-form-note h3 {
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+
+    .contact-form-note p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    /* =====================
+       FOOTER
+    ===================== */
+    footer {
+      background: #0a1525;
+      padding: 2.5rem 0;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-copy {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .footer-mark {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: rgba(255,255,255,0.2);
+      letter-spacing: 0.05em;
+    }
+
+    /* =====================
+       ANIMATIONS & REVEALS
+    ===================== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-pre { animation: fadeUp 0.8s ease 0.1s both; }
+    .hero-name { animation: fadeUp 0.9s ease 0.25s both; }
+    .hero-title { animation: fadeUp 0.9s ease 0.4s both; }
+    .hero-intro { animation: fadeUp 0.9s ease 0.55s both; }
+    .hero-stats { animation: fadeUp 0.9s ease 0.7s both; }
+    .hero-actions { animation: fadeUp 0.9s ease 0.85s both; }
+
+    /* Utility */
+    .gold-text { color: var(--gold); }
+    .mt-4 { margin-top: 1rem; }
+
+    .section-header {
+      margin-bottom: 4rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: 300;
+      margin-top: 0.6rem;
+    }
+
+    .section-header p {
+      max-width: 600px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-top: 1rem;
+    }
+
+    .gold-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 1.5rem 0;
+    }
+
+    /* =====================
+       RESPONSIVE
+    ===================== */
+    @media (max-width: 900px) {
+      :root { --section-gap: 80px; }
+
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+
+      #biography .bio-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .pub-grid { grid-template-columns: 1fr; }
+      .scholars-grid { grid-template-columns: 1fr 1fr; }
+      .awards-featured { grid-template-columns: 1fr; }
+      .conf-two-col { grid-template-columns: 1fr; gap: 3rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .intl-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .impact-item { min-width: 120px; }
+    }
+
+    /* =====================
+       MODALS
+    ===================== */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal[hidden] { display: none; }
+
+    .modal-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 18, 35, 0.75);
+      backdrop-filter: blur(6px);
+      cursor: pointer;
+    }
+
+    .modal-box {
+      position: relative;
+      z-index: 1;
+      background: var(--ivory);
+      width: 100%;
+      max-width: 820px;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(10,18,35,0.35);
+      animation: modalIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2.5rem 2.8rem 1.8rem;
+      border-bottom: 1px solid var(--rule);
+      background: var(--ivory);
+      flex-shrink: 0;
+    }
+
+    .modal-header h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 0.3rem 0 0;
+    }
+
+    .modal-subtitle {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    .modal-close {
+      background: none;
+      border: 1px solid var(--rule);
+      width: 36px;
+      height: 36px;
+      font-size: 0.75rem;
+      color: var(--muted);
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+    }
+    .modal-close:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+    .modal-body {
+      overflow-y: auto;
+      padding: 2rem 2.8rem 2.8rem;
+      flex: 1;
+    }
+
+    /* Publication list styles */
+    .modal-year-group {
+      margin-bottom: 2.5rem;
+    }
+
+    .modal-year-label {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--gold);
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .modal-pub-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .modal-pub-item:last-child { border-bottom: none; }
+
+    .modal-pub-title {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--navy);
+      line-height: 1.45;
+      margin-bottom: 0.3rem;
+    }
+
+    .modal-pub-meta {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .modal-tag {
+      display: inline-block;
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold-light);
+      padding: 0.1rem 0.45rem;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    /* Books grid styles */
+    .modal-books-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .modal-book-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .modal-book-item:last-child { border-bottom: none; }
+
+    .modal-book-num {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: var(--rule);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 2.5rem;
+      padding-top: 3px;
+    }
+
+    .modal-book-title {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      color: var(--navy);
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+    }
+
+    .modal-book-meta {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    /* Button style for view-all triggers */
+    button.view-all-link {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    @media (max-width: 600px) {
+      .modal-header { padding: 1.8rem 1.5rem 1.4rem; }
+      .modal-body { padding: 1.5rem; }
+      .modal-header h2 { font-size: 1.5rem; }
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 1.5rem; }
+      .hero-stats { gap: 1.5rem; }
+      .hero-divider { display: none; }
+      .scholars-grid { grid-template-columns: 1fr; }
+      .project-item { grid-template-columns: auto 1fr; }
+      .project-amount { display: none; }
+      .books-featured { grid-template-columns: 1fr; }
+      .impact-bar-inner { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+      .impact-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Prof. Dr. S.L. Gupta Home">
+        Prof. <span>(Dr.)</span> S.L. Gupta
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#biography">Biography</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#supervision">Scholars</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Academic Enquiry</a>
+      <button class="nav-hamburger" aria-label="Menu" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-bg-line" aria-hidden="true"></div>
+    <div class="hero-bg-number" aria-hidden="true">30</div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-pre">
+          <span class="eyebrow">Professor · Dean · Director · Research Mentor</span>
+        </div>
+        <h1 class="hero-name">
+          Prof. (Dr.)<br/><em>S.L. Gupta</em>
+        </h1>
+        <p class="hero-title">
+          <strong>D.Litt. · Ph.D. · PGDBM · M.Com · B.Com (Hons)</strong><br/>
+          Professor of Marketing &amp; Finance, Birla Institute of Technology (Deemed University), Noida<br/>
+          Former Dean, Waljat College of Applied Sciences, Muscat, Oman
+        </p>
+        <p class="hero-intro">
+          Three decades at the intersection of rigorous scholarship, institutional leadership, and transformative education — across the universities of India and the Gulf.
+        </p>
+        <div class="hero-stats" role="list" aria-label="Key achievements">
+          <div role="listitem">
+            <span class="hero-stat-num">30<sup style="font-size:0.5em; color:var(--gold)">+</sup></span>
+            <span class="hero-stat-label">Years in Academia</span>
+          </div>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <div role="listitem">
+            <span class="hero-stat-num">16</span>
+            <span class="hero-stat-label">Books Published</span>
+          </div>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <div role="listitem">
+            <span class="hero-stat-num">32</span>
+            <span class="hero-stat-label">Research Papers</span>
+          </div>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <div role="listitem">
+            <span class="hero-stat-num">9</span>
+            <span class="hero-stat-label">Ph.D. Scholars</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#biography" class="btn-primary">Explore Profile</a>
+          <a href="#contact" class="btn-ghost">Academic Enquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== IMPACT BAR ===================== -->
+  <div id="impact-bar" role="complementary" aria-label="Impact statistics">
+    <div class="container">
+      <div class="impact-bar-inner">
+        <div class="impact-item">
+          <span class="impact-num">44</span>
+          <span class="impact-label">Intl. Conference Papers</span>
+        </div>
+        <div class="impact-item">
+          <span class="impact-num">11</span>
+          <span class="impact-label">Conferences Organised</span>
+        </div>
+        <div class="impact-item">
+          <span class="impact-num">6</span>
+          <span class="impact-label">Funded Projects</span>
+        </div>
+        <div class="impact-item">
+          <span class="impact-num">14</span>
+          <span class="impact-label">Awards &amp; Honours</span>
+        </div>
+        <div class="impact-item">
+          <span class="impact-num">2</span>
+          <span class="impact-label">Countries of Leadership</span>
+        </div>
+        <div class="impact-item">
+          <span class="impact-num">5</span>
+          <span class="impact-label">Professional Bodies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== BIOGRAPHY ===================== -->
+  <section id="biography" aria-labelledby="bio-heading">
+    <div class="container">
+      <div class="bio-grid">
+        <div class="bio-sidebar">
+          <span class="section-label">About</span>
+          <h2 id="bio-heading">A Scholar Who Builds Institutions</h2>
+          <div class="gold-rule"></div>
+          <p>Born 1965. Based in Delhi/NCR.</p>
+          <p>Dual doctorate holder — Ph.D. and D.Litt. — with a career spanning premier institutions in India and the Sultanate of Oman.</p>
+          <p>Awarded <strong>Best Director — Technical Institutes, 2013</strong> by the National Human Resource Development Network, Patna.</p>
+
+          <ul class="credentials-list" aria-label="Academic credentials">
+            <li>
+              <span>
+                <span class="cred-degree">D.Litt.</span>
+                — Tilka Manjhi Bhagalpur University
+              </span>
+              <span class="cred-year">2016</span>
+            </li>
+            <li>
+              <span>
+                <span class="cred-degree">Certificate Programme in Retail Management</span>
+                — IIM Calcutta
+              </span>
+              <span class="cred-year">2007</span>
+            </li>
+            <li>
+              <span>
+                <span class="cred-degree">Ph.D.</span>
+                — CCS University, Meerut
+              </span>
+              <span class="cred-year">1998</span>
+            </li>
+            <li>
+              <span>
+                <span class="cred-degree">PGDBM (Marketing)</span>
+                — CMD, Modinagar
+              </span>
+              <span class="cred-year">1988</span>
+            </li>
+            <li>
+              <span>
+                <span class="cred-degree">M.Com</span>
+                — University of Rajasthan
+              </span>
+              <span class="cred-year">1986</span>
+            </li>
+            <li>
+              <span>
+                <span class="cred-degree">B.Com (Hons)</span>
+                — University of Rajasthan
+              </span>
+              <span class="cred-year">1984</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bio-main">
+          <p>
+            Prof. (Dr.) S.L. Gupta is a distinguished academic leader whose career spans over three decades at the forefront of management education, research, and institutional governance. His trajectory — from lecturer to Director, and from India to the Sultanate of Oman — reflects not merely professional advancement, but a sustained commitment to the highest ideals of academic leadership.
+          </p>
+          <p>
+            As Professor at the Birla Institute of Technology (Deemed University), Noida, and former Dean of Waljat College of Applied Sciences in Muscat, he has built a rare cross-cultural fluency in the governance frameworks of both Indian and Gulf education systems. This duality has positioned him as an educator and administrator of genuine global standing.
+          </p>
+          <p>
+            His scholarly output — 32 research papers in peer-reviewed journals, 16 books across major publishers including Tata McGraw-Hill, CRC Press Taylor &amp; Francis, and Excel Books, and 9 doctoral scholars guided to completion — constitutes a body of work that has shaped the discourse in marketing, retail management, banking, and research methodology across India and beyond.
+          </p>
+          <p>
+            A strategic architect of institutional systems, he has led accreditation processes, designed curricular frameworks from the ground up, directed multi-institutional research projects, and fostered academic partnerships across national boundaries. His leadership philosophy is grounded in the conviction that great institutions are built not through administration alone, but through a living culture of inquiry, inclusion, and intellectual courage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEADERSHIP ===================== -->
+  <section id="leadership" aria-labelledby="leadership-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Career</span>
+        <h2 id="leadership-heading">Leadership &amp;<br/>Governance</h2>
+        <p>A record of institutional stewardship at the Dean, Director, and Professor level — across premier institutions in India and Oman.</p>
+      </div>
+      <div class="timeline" role="list">
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Aug 2024 — Present</div>
+          <div class="timeline-role">Professor, Marketing &amp; Finance</div>
+          <div class="timeline-org">Birla Institute of Technology (Deemed University), Noida</div>
+          <div class="timeline-desc">
+            Delivering advanced pedagogy in Business Research, Sales &amp; Distribution Management, Management of Financial Services, and Marketing of Services for MBA and BBA cohorts. Continuing an active research agenda in consumer behaviour, marketing analytics, and digital transformation in education.
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Aug 2021 — Aug 2024</div>
+          <div class="timeline-role">Director</div>
+          <div class="timeline-org">Birla Institute of Technology (Deemed University), Noida</div>
+          <div class="timeline-desc">
+            Provided strategic and academic leadership to the institution — overseeing curriculum alignment with AICTE standards, faculty development, admissions, research promotion, and the full cycle of student welfare. Defined institutional strategy in alignment with the management's vision, and maintained rigorous standards in internal examination and continuous evaluation.
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Nov 2014 — Sep 2021</div>
+          <div class="timeline-role">Dean</div>
+          <div class="timeline-org">Waljat College of Applied Sciences, Muscat, Oman (BIT International Centre)</div>
+          <div class="timeline-desc">
+            Led the full academic and administrative operations of the college — faculty governance, annual budget preparation, quality assurance systems, and accreditation under the Oman Academic Accreditation Authority (OAAA). Maintained strategic partnership with BIT, India, and designed operational frameworks that elevated the college's standing in the Gulf education landscape. Selected as External Reviewer by OAAA in 2017.
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Aug 2012 — Oct 2014</div>
+          <div class="timeline-role">Director, Patna Campus</div>
+          <div class="timeline-org">Birla Institute of Technology (Deemed University)</div>
+          <div class="timeline-desc">
+            Administered a campus of over 1,500 students and faculty across multiple disciplines. Organised national and international workshops, symposia, and industry-academia forums. Supervised funded research projects from ICSSR, DST-NIMAT, and UGC, establishing BIT Patna as a recognized center of research activity.
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Jul 2006 — Jul 2012</div>
+          <div class="timeline-role">Professor &amp; Doctoral Research Coordinator</div>
+          <div class="timeline-org">Birla Institute of Technology (Deemed University), Noida</div>
+          <div class="timeline-desc">
+            Combined high-impact teaching with the coordination of doctoral research programmes. Supervised multiple Ph.D. scholars, initiated faculty development workshops, and finalized curriculum for the Integrated Master of Business Economics (I-MBE) — a programme authored from first principles.
+          </div>
+        </div>
+
+        <div class="timeline-item" role="listitem">
+          <div class="timeline-period">Aug 2000 — Oct 2006</div>
+          <div class="timeline-role">Professor</div>
+          <div class="timeline-org">Maharaja Surajmal Institute, affiliated with I.P. University, New Delhi</div>
+          <div class="timeline-desc">Earlier career encompassing additional roles at Apeejay School of Marketing (Associate Professor, 1999–2000), DPC Institute of Management (Lecturer &amp; Assistant Director, 1992–1999), and Shriram Institute for Industrial Research (HOD &amp; Commercial Officer, 1988–1992).</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH & PUBLICATIONS ===================== -->
+  <section id="research" aria-labelledby="research-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Scholarship</span>
+        <h2 id="research-heading">Research &amp;<br/>Selected Publications</h2>
+        <p>32 peer-reviewed publications spanning marketing analytics, retail management, microfinance, banking, and digital education. Presented at 44 national and international conferences across three continents.</p>
+      </div>
+      <div class="pub-grid" role="list">
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2022</div>
+          <div class="pub-title">Artificial Intelligence and Deep Learning Based Information Retrieval Framework for Assessing Student Performance</div>
+          <div class="pub-journal">International Journal of Information Retrieval Research (IJIRR)</div>
+          <span class="pub-tag">AI &amp; Education</span>
+        </div>
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2022</div>
+          <div class="pub-title">Neuromarketing and Consumer Behaviour: A Bibliometric Analysis</div>
+          <div class="pub-journal">Journal of Consumer Behaviour</div>
+          <span class="pub-tag">Neuromarketing</span>
+        </div>
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2022</div>
+          <div class="pub-title">Student Acceptance of Social Media in Higher Education: An Application of UTAUT2 Model</div>
+          <div class="pub-journal">Thailand and the World Economy, Vol. 40, No. 1</div>
+          <span class="pub-tag">Scopus · EdTech</span>
+        </div>
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2021</div>
+          <div class="pub-title">A Systematic Review of Determinants Including Sustainable E-Medical Tourism</div>
+          <div class="pub-journal">International Journal of Reliable &amp; Quality E-Healthcare, Vol. 11(2)</div>
+          <span class="pub-tag">Scopus · Healthcare</span>
+        </div>
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2016</div>
+          <div class="pub-title">The Antecedents of Customer Loyalty: Attitudinal and Behavioral Perspectives Based on Oliver's Loyalty Model</div>
+          <div class="pub-journal">Indian Journal of Marketing, March 2016</div>
+          <span class="pub-tag">Scopus · Marketing</span>
+        </div>
+
+        <div class="pub-card" role="listitem">
+          <div class="pub-year">2011</div>
+          <div class="pub-title">Determinants of Internet Buying Behavior in India</div>
+          <div class="pub-journal">Asian Journal of Business Research, Vol. 1(2)</div>
+          <span class="pub-tag">Digital Commerce</span>
+        </div>
+
+      </div>
+      <button class="view-all-link" id="openPubsModal" aria-label="View complete publication archive">Full Publication Archive (32 Papers)</button>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKS ===================== -->
+  <section id="books" aria-labelledby="books-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Authored Works</span>
+        <h2 id="books-heading">16 Books.<br/>Global Publishers.</h2>
+        <p>From Tata McGraw-Hill and CRC Press Taylor &amp; Francis to Excel Books and Himalaya Publishing — a publishing record that has defined curricula across institutions for two decades.</p>
+      </div>
+      <div class="books-featured" role="list">
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">01</div>
+          <div class="book-title">Business Research Methods</div>
+          <div class="book-publisher">Tata McGraw-Hill, 2012</div>
+          <div class="book-isbn">ISBN 9781259005039</div>
+        </div>
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">02</div>
+          <div class="book-title">Digitalization of Higher Education using Cloud Computing</div>
+          <div class="book-publisher">CRC Press · Taylor &amp; Francis Group</div>
+          <div class="book-isbn">ISBN 9781003203070</div>
+        </div>
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">03</div>
+          <div class="book-title">Marketing Research</div>
+          <div class="book-publisher">Excel Books, 2010</div>
+          <div class="book-isbn">ISBN 9788174463456</div>
+        </div>
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">04</div>
+          <div class="book-title">Sales and Distribution Management</div>
+          <div class="book-publisher">Excel Books, 2010</div>
+          <div class="book-isbn">ISBN 9788174468703</div>
+        </div>
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">05</div>
+          <div class="book-title">Brand Management: Text and Cases (An Indian Perspective)</div>
+          <div class="book-publisher">Himalaya Publishing House</div>
+          <div class="book-isbn">ISBN 9788183181754</div>
+        </div>
+
+        <div class="book-card" role="listitem">
+          <div class="book-number">06</div>
+          <div class="book-title">Navigating Digital Landscape: Digital Influence on Consumer Habits</div>
+          <div class="book-publisher">Taylor &amp; Francis</div>
+          <div class="book-isbn">In Press</div>
+        </div>
+
+      </div>
+      <button class="view-all-link" id="openBooksModal" aria-label="View complete book catalogue">Complete Works (16 Books)</button>
+    </div>
+  </section>
+
+  <!-- ===================== DOCTORAL SUPERVISION ===================== -->
+  <section id="supervision" aria-labelledby="supervision-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Doctoral Mentorship</span>
+        <h2 id="supervision-heading">Nine Scholars.<br/>One Research Culture.</h2>
+        <p>Nine doctoral candidates guided to completion. Ongoing supervision across topics spanning consumer behaviour, retail strategy, microfinance, and supply chain management.</p>
+      </div>
+      <div class="scholars-grid" role="list">
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Sonali Mathur</div>
+          <div class="scholar-topic">Security Technology in Banking Sector</div>
+          <div class="scholar-year">Ph.D. Awarded · 2021</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Upasana Divan</div>
+          <div class="scholar-topic">Customer-Based Branding in India</div>
+          <div class="scholar-year">Ph.D. Awarded · 2021</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Amresh Kumar</div>
+          <div class="scholar-topic">Branding Strategies in Organised Retail and Customer Loyalty</div>
+          <div class="scholar-year">Ph.D. Awarded · 2017</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Najmal Hoda</div>
+          <div class="scholar-topic">Faith-Based Microfinance as an Alternative Tool for Poverty Alleviation</div>
+          <div class="scholar-year">Ph.D. Awarded · 2015</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Piali Haldar</div>
+          <div class="scholar-topic">Rural Retailing and its Impact on Economic Development</div>
+          <div class="scholar-year">Ph.D. Awarded · 2015</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Shikha Rastogi</div>
+          <div class="scholar-topic">Outsourcing and Marketing Strategies of Third-Party Logistics in India</div>
+          <div class="scholar-year">Ph.D. Awarded · 2014</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Amit Goel</div>
+          <div class="scholar-topic">Multi-Agent System Management Using Supply Chain for Automobile</div>
+          <div class="scholar-year">Ph.D. Awarded · 2014</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Meenakshi Sharma</div>
+          <div class="scholar-topic">Retailing Strategies of Real Estate Sector in India — A Macro Perspective</div>
+          <div class="scholar-year">Ph.D. Awarded · 2011</div>
+        </div>
+
+        <div class="scholar-card" role="listitem">
+          <div class="scholar-name">Arun Mittal</div>
+          <div class="scholar-topic">Promotional Strategies Adopted by Leading Banks in India</div>
+          <div class="scholar-year">Ph.D. Awarded · 2011</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FUNDED PROJECTS ===================== -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Research Funding</span>
+        <h2 id="projects-heading">Funded Projects<br/>&amp; Grants</h2>
+        <p>Principal Investigator on six major research projects — funded by the Government of India, the Government of Oman, ICSSR, UGC, DST, and Mahatma Gandhi National Council for Rural Education.</p>
+      </div>
+      <div class="projects-list" role="list">
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <div class="project-funder">Mahatma Gandhi National Council for Rural Education</div>
+            <div class="project-title">The Rural Youth from Enrollment to Employment: Role of the New National Education Policy 2020 in Re-imagining Vocational Education through HEIs</div>
+            <div class="project-year">Ongoing · Co-PI with Dr. Arun Mittal</div>
+          </div>
+          <div class="project-amount">—<small>Active Grant</small></div>
+        </div>
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <div class="project-funder">The Research Council of Oman (TRC), Government of Oman</div>
+            <div class="project-title">International Conclave on Innovation in Engineering &amp; Management, Waljat College of Applied Sciences, Muscat</div>
+            <div class="project-year">2016</div>
+          </div>
+          <div class="project-amount">RO 10,000<small>Funded Amount</small></div>
+        </div>
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <div class="project-funder">ICSSR, Ministry of HRD, Government of India</div>
+            <div class="project-title">Ten-Day Research Methodology Programme for Ph.D. Students in Social Sciences</div>
+            <div class="project-year">2014</div>
+          </div>
+          <div class="project-amount">₹5,50,000<small>Approved Amount</small></div>
+        </div>
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">04</div>
+          <div class="project-body">
+            <div class="project-funder">UGC Sponsored Major Research Project</div>
+            <div class="project-title">A Study on Imperatives for Quality and Effective Teaching in Indian B-Schools</div>
+            <div class="project-year">2012–Ongoing</div>
+          </div>
+          <div class="project-amount">₹8,92,700<small>Approved Amount</small></div>
+        </div>
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">05</div>
+          <div class="project-body">
+            <div class="project-funder">Bihar Rural Development Society (BRDS)</div>
+            <div class="project-title">Detailed Time and Motion Studies (WT&amp;MS), BIT Patna Campus</div>
+            <div class="project-year">2013–14</div>
+          </div>
+          <div class="project-amount">₹15,00,000<small>Approved Amount</small></div>
+        </div>
+
+        <div class="project-item" role="listitem">
+          <div class="project-num">06</div>
+          <div class="project-body">
+            <div class="project-funder">DST-NIMAT Project</div>
+            <div class="project-title">Conducting EAC &amp; EDP (Entrepreneurship Awareness Camp and Entrepreneurship Development Programme)</div>
+            <div class="project-year">2013–14</div>
+          </div>
+          <div class="project-amount">₹1,43,500<small>Approved Amount</small></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONFERENCES ===================== -->
+  <section id="conferences" aria-labelledby="conf-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Global Engagement</span>
+        <h2 id="conf-heading">Conferences &amp;<br/>Speaking</h2>
+        <p>22 international conference presentations across New York, Shanghai, Dubai, Seoul, and Oman. 22 national conference papers. 11 major conferences organized and convened.</p>
+      </div>
+      <div class="conf-two-col">
+        <div class="conf-col">
+          <h3>Selected International Presentations</h3>
+
+          <div class="conf-item">
+            <div class="conf-location">New York, USA · 2018</div>
+            <div class="conf-title">Exploring the Moderating Role of Entrepreneurial Education on Entrepreneurial Intention — 7th ABRM-MEC International Conference, Crown Plaza JFK Airport</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">New York, USA · 2012</div>
+            <div class="conf-title">Business Education and Teaching Innovation in India — GBATA International Conference, New York City</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">Shanghai, China · 2008</div>
+            <div class="conf-title">Changing Consumer Perceptions towards Online Shopping in India — Global Marketing Conference, Korean Academy of Marketing Sciences, Jiao Tong University</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">Dubai, UAE · 2009</div>
+            <div class="conf-title">From Sourcing to Strategic e-Sourcing — International Conference on Technology and Business Management, Al Ghurair University</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">Seoul, South Korea · 1996</div>
+            <div class="conf-title">Physical Distribution in India — Korea Productivity Center</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">Virtual · 2021</div>
+            <div class="conf-title">Skill Development through Vocational Education and Training in India — Asia Pacific International Conference</div>
+          </div>
+        </div>
+
+        <div class="conf-col">
+          <h3>Conferences Organised</h3>
+
+          <div class="conf-item">
+            <div class="conf-location">BIT, Noida · 2023</div>
+            <div class="conf-title">ICIEM'23: International Conference on Innovation in Engineering &amp; Management — Sustainability through Creativity and Innovation</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">Muscat, Oman · 2016</div>
+            <div class="conf-title">International Conclave on Innovations in Engineering &amp; Management — Oman Vision 2020 (Funded by The Research Council of Oman, RO 10,000)</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">BIT, Patna · 2014</div>
+            <div class="conf-title">National Student Conclave on Challenges of the New Millennium (NSC 2014) — Chairman</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">BIT, Patna · 2013</div>
+            <div class="conf-title">International Conclave on Innovations in Engineering and Management (ICIEM 2013) — Convener</div>
+          </div>
+
+          <div class="conf-item">
+            <div class="conf-location">BIT, Noida · 2010</div>
+            <div class="conf-title">BIT National Management Conclave — Managerial Challenges in the 21st-Century Corporate World</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AWARDS ===================== -->
+  <section id="awards" aria-labelledby="awards-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Recognition</span>
+        <h2 id="awards-heading">Awards &amp;<br/>Honours</h2>
+        <p>14 awards and recognitions — from government honours and institutional citations to peer acknowledgments and international conference best paper awards.</p>
+      </div>
+      <div class="awards-featured" role="list">
+
+        <div class="award-card" role="listitem">
+          <div class="award-year-badge">2022</div>
+          <div class="award-title">Best Paper Award</div>
+          <div class="award-body">For the paper "Perception and Willingness to Pay for Health Insurance in Post-Pandemic: A Cross-cultural Analysis of India and Oman" — Asia Pacific Economic Integration Forum, July 21–22, 2022.</div>
+        </div>
+
+        <div class="award-card" role="listitem">
+          <div class="award-year-badge">2013</div>
+          <div class="award-title">Best Director — Technical Institutes</div>
+          <div class="award-body">Conferred by the National Human Resource Development Network, Patna, in recognition of outstanding institutional leadership, campus development, and academic governance.</div>
+        </div>
+
+        <div class="award-card" role="listitem">
+          <div class="award-year-badge">2013</div>
+          <div class="award-title">Fellow of the Indian Commerce Association</div>
+          <div class="award-body">Honored at the 65th All India Commerce Conference for outstanding contribution to the field of Commerce and Management — K.P.B Hinduja College of Commerce.</div>
+        </div>
+
+      </div>
+      <div style="margin-top: 2rem; font-size: 0.85rem; color: var(--muted); font-style: italic;">
+        Additional recognitions include letters of appreciation from Waljat's Trustee Council (7 citations), Sultan Qaboos University, Apollo Hospital Muscat, OAAA, and the Government of Bihar. Also: Award for Cooperative Excellence from Chief Minister Sheila Dikshit, Government of Delhi, 2002.
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MEMBERSHIPS ===================== -->
+  <section id="memberships" aria-labelledby="memberships-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Professional Standing</span>
+        <h2 id="memberships-heading">Professional<br/>Memberships</h2>
+      </div>
+      <table class="membership-table" aria-label="Professional memberships">
+        <tbody>
+          <tr>
+            <td>Indian Commerce Association</td>
+            <td>Life Member · No. 2084</td>
+          </tr>
+          <tr>
+            <td>The Indian Society for Technical Education</td>
+            <td>Life Member · No. 67487</td>
+          </tr>
+          <tr>
+            <td>All India Management Association</td>
+            <td>Associate Member · Since April 1992</td>
+          </tr>
+          <tr>
+            <td>Analytical Society of India (IIM Bangalore)</td>
+            <td>Life Member</td>
+          </tr>
+          <tr>
+            <td>Academy of Marketing, Scotland (UK)</td>
+            <td>Member · 2006–07</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== INTERNATIONAL ENGAGEMENT ===================== -->
+  <section id="international" aria-labelledby="intl-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Global Presence</span>
+        <h2 id="intl-heading">India – Gulf<br/>Cross-Cultural Leadership</h2>
+        <p>A career defined by deep engagement across two distinct education ecosystems — the dynamic landscape of Indian higher education and the emergent academic infrastructure of the Gulf.</p>
+      </div>
+      <div class="intl-grid">
+        <div>
+          <div class="intl-item">
+            <h4>Dean, Sultanate of Oman (2014–2021)</h4>
+            <p>Seven years as Dean of Waljat College of Applied Sciences in Muscat — the BIT International Centre — building cross-border academic structures aligned with Oman's Vision 2020. Led OAAA accreditation, quality assurance, and curriculum development for BBA and EMBA programmes.</p>
+          </div>
+          <div class="intl-item">
+            <h4>External Reviewer, OAAA · 2017</h4>
+            <p>Selected by the Oman Academic Accreditation Authority as an External Reviewer — a recognition of expertise in quality assurance and institutional evaluation frameworks.</p>
+          </div>
+          <div class="intl-item">
+            <h4>Research Council of Oman Grant</h4>
+            <p>Successfully attracted and led the delivery of an internationally funded research project for the TRC Oman-sponsored International Conclave in 2016, valued at RO 10,000.</p>
+          </div>
+        </div>
+        <div>
+          <div class="intl-item">
+            <h4>Conference Presentations: 5 Countries</h4>
+            <p>Research presented in the United States (New York), China (Shanghai), the UAE (Dubai), South Korea (Seoul), and Oman (Muscat) — alongside extensive participation across India's premier academic forums.</p>
+          </div>
+          <div class="intl-item">
+            <h4>Guest Editor, Emerald Journal</h4>
+            <p>Served as Guest Editor for an Emerald Publishing journal — among the most prestigious international management publication houses — reflecting recognition by the global scholarly community.</p>
+          </div>
+          <div class="intl-item">
+            <h4>Special Editor, Thailand and the World Economy · 2022</h4>
+            <p>Edited a special issue of the Thailand and the World Economy Journal, contributing to international academic discourse on development economics and education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <span class="eyebrow">Get in Touch</span>
+          <h2 id="contact-heading" style="font-size: clamp(2.2rem, 4vw, 3.4rem); font-weight: 300; margin-top: 0.6rem; line-height: 1.15;">Academic<br/>Collaboration &amp;<br/>Enquiry</h2>
+          <p class="contact-intro">
+            Open to collaboration on doctoral research, advisory mandates, institutional consultancy, visiting faculty engagements, and international academic partnerships.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value"><a href="mailto:drslgupta@gmail.com"><span class="__cf_email__" data-cfemail="e4809697888391949085a48389858d88ca878b89">drslgupta@gmail.com</span></a></div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value"><a href="tel:+919811230453">+91 98112 30453</a></div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">A-141, Sector 48, Noida<br/>Delhi/NCR, India</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Institution</div>
+                <div class="contact-value">Birla Institute of Technology (Deemed University)<br/>Noida Campus</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-form-note">
+            <h3>Areas of Collaboration</h3>
+            <p>Prof. Gupta welcomes enquiries related to the following areas of professional engagement:</p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>Ph.D. and Doctoral Research Supervision
+              </li>
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>Institutional Accreditation Advisory (AICTE, NAAC, International)
+              </li>
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>Visiting Faculty &amp; Executive Development Programmes
+              </li>
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>International Conference Keynote &amp; Speaking Engagements
+              </li>
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>Faculty Development Programme Design &amp; Delivery
+              </li>
+              <li style="font-size:0.8rem; color:rgba(255,255,255,0.55); padding: 0.6rem 0;">
+                <span style="color:var(--gold-light); margin-right: 0.8rem;">→</span>Research Methodology, SPSS &amp; Multivariate Analysis Workshops
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding: 2rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);">
+            <p style="font-family: var(--serif); font-size: 1.05rem; color: rgba(255,255,255,0.5); line-height: 1.7; font-style: italic;">
+              "The purpose of education is not the filling of a pail, but the lighting of a fire — and it is the mentor's privilege to strike that first spark."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy">© 2025 Prof. (Dr.) S.L. Gupta. All rights reserved.</p>
+      <p class="footer-mark">Birla Institute of Technology · Noida</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MODALS ===================== -->
+
+  <!-- Publications Modal -->
+  <div id="pubsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="pubsModalTitle" hidden>
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">Scholarly Output</span>
+          <h2 id="pubsModalTitle">Full Publication Archive</h2>
+          <p class="modal-subtitle">32 peer-reviewed research papers · 2007 – 2022</p>
+        </div>
+        <button class="modal-close" data-close aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2022</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Dimensions of Cloud Computing based Brand Equity Measurement in the Education Sector of Oman and India</div>
+              <div class="modal-pub-meta">Fith M, Gupta S L, Mishra N, Yawar M · <em>Digitalization of Higher Education using Cloud Computing</em></div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Decision Analysis Using Predictive and Prescriptive Analysis of Student's Satisfaction towards Quality of Education for Sustainable Society in Oman</div>
+              <div class="modal-pub-meta">Gupta S L, Mishra N, Kansara P, Yawar M · <em>Decision Analytics for Sustainable Development in Smart Society 5.0</em></div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Artificial Intelligence and Deep Learning Based Information Retrieval Framework for Assessing Student Performance</div>
+              <div class="modal-pub-meta">Gupta S L and Mishra N · <em>International Journal of Information Retrieval Research (IJIRR)</em></div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Student Acceptance of Social Media in Higher Education: An Application of UTAUT2 Model</div>
+              <div class="modal-pub-meta">Mishra N, Gupta S L, Srivastava S, Kabir M · <em>Thailand and the World Economy</em>, Vol. 40, No. 1 <span class="modal-tag">Scopus</span></div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Neuromarketing and Consumer Behaviour: A Bibliometric Analysis</div>
+              <div class="modal-pub-meta">Gupta S L · <em>Journal of Consumer Behaviour</em></div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Role of Experiential Learning in Skill Development: A Study of Rural Vocational Students of VET Institutions</div>
+              <div class="modal-pub-meta">Gupta S L, Singh S, Mittal A · <em>Indian Journal of Commerce</em>, Vol. 75, No. 4, pp. 105–122</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2021</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">A Systematic Review of Determinants Including Sustainable E-Medical Tourism</div>
+              <div class="modal-pub-meta">Oberoi S, Kansara P, Gupta S L · <em>International Journal of Reliable &amp; Quality E-Healthcare</em>, Vol. 11(2) <span class="modal-tag">Scopus</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2016</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Factor Analysis of Impediments for Micro, Small and Medium Enterprises in Bihar</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Ranjan R · <em>International Journal of Entrepreneurship</em>, 20(1), 74–79</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">The Antecedents of Customer Loyalty: Attitudinal and Behavioral Perspectives Based on Oliver's Loyalty Model</div>
+              <div class="modal-pub-meta">Amresh Kumar, Gupta S L &amp; Nawal Kishor · <em>Indian Journal of Marketing</em>, March 2016 <span class="modal-tag">Scopus</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2015</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Client Satisfaction in Faith-based Microfinance: A Comparison with Mainstream Models of Microfinance</div>
+              <div class="modal-pub-meta">Hoda N &amp; Gupta S L · <em>Journal of Economic Cooperation &amp; Development</em>, 36(2), 6–12</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Faith-Based Organizations and Microfinance: A Literature Review</div>
+              <div class="modal-pub-meta">Hoda N &amp; Gupta S L · <em>Asian Social Science</em>, 11(9), 245–254</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2014</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Impact of Liberalization on Contribution of MSMEs in Economic Development of India</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Ranjan R · <em>International Journal of Business Management &amp; Research</em>, 4(4), 11–21</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Measuring Retailer Store Image: A Scale Development Study</div>
+              <div class="modal-pub-meta">Kumar A, Gupta S L &amp; Kishore N · <em>International Journal of Business &amp; Economics</em>, 13(1), 25–38</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2012</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Classification of Data Warehouse Testing Approaches</div>
+              <div class="modal-pub-meta">Gupta S L, Pahwa P &amp; Mathur M S · <em>International Journal of Computers &amp; Technology</em>, 3(3a), 381–386</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Paired Comparison of Promotional Methods in Context of Banking Services: An Application of Multidimensional Scaling</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Mittal A · <em>IIMS Journal of Management Science</em>, 3(2), 131–139</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Data Warehouse Vulnerability and Security</div>
+              <div class="modal-pub-meta">Gupta S L, Mathur S &amp; Modi P · <em>International Journal of Scientific &amp; Engineering Research</em>, 3(5), 1–5</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Risk Management Processes &amp; Technique for the Successful Delivery of Web Based Software Projects</div>
+              <div class="modal-pub-meta">Gupta S L · <em>Indian Journal of Applied Research</em>, 1(4)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2011</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Attrition of Knowledge Workforce in Healthcare in Northern Parts of India — Health Information Technology as a Plausible Retention Strategy</div>
+              <div class="modal-pub-meta">Bhattacharya I, Ramachandran A, Suri R K &amp; Gupta S L · <em>BVICAM</em>, pp. 411–416</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Determinants of Internet Buying Behavior in India</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Nayyar R · <em>Asian Journal of Business Research</em>, 1(2), 53–65</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Internet Use and Benefits in Procurement for IT Industry in Indian Sub-continent: A Descriptive and Conclusive Analysis</div>
+              <div class="modal-pub-meta">Gupta S L, Jha B K &amp; Gupta H · <em>International Journal of Procurement Management</em>, 4(4), 341–362</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Significance of Quality Certification towards Business Excellence: Case of Indian Software Industry</div>
+              <div class="modal-pub-meta">Jain A &amp; Gupta S L · <em>International Journal of Innovation, Management and Technology</em>, 2(3), 204–209</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Integration of Supply Chain Management Using Multi-agent System &amp; Negotiation Model</div>
+              <div class="modal-pub-meta">Goel A K, Gupta S L, Srinivasan S &amp; Jha B K · <em>International Journal of Computer and Electrical Engineering</em>, 3(3), 375–378</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2010</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Impact of Changing Demographic Profiles of Indian Customers on Their Internet Shopping Behavior</div>
+              <div class="modal-pub-meta">Nayyar R &amp; Gupta S L · <em>View Point</em>, 51(3), 17–24</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2009</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Online Shopping Behavior by Urban Indian Youth</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Gupta N · <em>AIMS International Journal of Management</em>, 3(2), 119–135</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2008</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Comparative Study of Promotional Strategies Adopted by Public and Private Sector Banks in India</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Mittal A · <em>Asia Pacific Business Review</em>, 4(3), 87–93</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Use and Effectiveness of New Technologies in Indian Banking: A Study</div>
+              <div class="modal-pub-meta">Jha B K, Gupta S L &amp; Yadav P · <em>ICFAI Journal of Services Marketing</em>, 6(1), 6–22</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Mobile Banking: Present Status and Future Perspectives</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Mittal A · <em>The Analyst</em>, ICFAI University Press, pp. 98–100</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-year-group">
+          <div class="modal-year-label">2007</div>
+          <div class="modal-pub-list">
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Risks and Rewards in Export Entrepreneurship from Indian Sub-continent</div>
+              <div class="modal-pub-meta">Gupta S L, Bahadur S &amp; Gupta H · <em>AIUB Journal of Business and Economics</em>, 6(2)</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">Exploring the Trends of Retail Formats in India — A Study of Shopping Malls</div>
+              <div class="modal-pub-meta">Gupta S L &amp; Kaur T · <em>Indian Journal of Marketing</em>, 37(7), 30–36</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">An Empirical Study on Retailing Industry in India: A Case Study on Apparel Market</div>
+              <div class="modal-pub-meta">Gupta S L · <em>Paradigm</em>, 11(2), 1–8</div>
+            </div>
+            <div class="modal-pub-item">
+              <div class="modal-pub-title">A Study on Trends in Retailing Industry in India — A Case Study on Shopping Malls</div>
+              <div class="modal-pub-meta">Gupta S L · <em>BVIMR Management Edge Journal</em>, Bharati Vidyapeeth University</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /modal-body -->
+    </div>
+  </div>
+
+  <!-- Books Modal -->
+  <div id="booksModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="booksModalTitle" hidden>
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">Authored Works</span>
+          <h2 id="booksModalTitle">Complete Works</h2>
+          <p class="modal-subtitle">16 books across global publishers · 2004 – Present</p>
+        </div>
+        <button class="modal-close" data-close aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-books-grid">
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">01</div>
+            <div>
+              <div class="modal-book-title">Navigating Digital Landscape: Digital Influence on Consumer Habits</div>
+              <div class="modal-book-meta">Taylor &amp; Francis · In Press</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">02</div>
+            <div>
+              <div class="modal-book-title">Transforming Higher Education through Digitization</div>
+              <div class="modal-book-meta">Taylor &amp; Francis</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">03</div>
+            <div>
+              <div class="modal-book-title">Innovations in Engineering and Management (Conference Proceedings 2023)</div>
+              <div class="modal-book-meta">Wisdom Publications · 2023</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">04</div>
+            <div>
+              <div class="modal-book-title">Digitalization of Higher Education using Cloud Computing <span style="color:var(--gold); font-size:0.75em;">(Editor)</span></div>
+              <div class="modal-book-meta">CRC Press · Taylor &amp; Francis Group · ISBN 9781003203070</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">05</div>
+            <div>
+              <div class="modal-book-title">Business Research Methods</div>
+              <div class="modal-book-meta">Tata McGraw-Hill · 2012 · ISBN 9781259005039</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">06</div>
+            <div>
+              <div class="modal-book-title">Retailing and E-Tailing</div>
+              <div class="modal-book-meta">International Book House · 2012 · ISBN 9789381335185</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">07</div>
+            <div>
+              <div class="modal-book-title">International Retailing</div>
+              <div class="modal-book-meta">Excel Books · 2011</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">08</div>
+            <div>
+              <div class="modal-book-title">SPSS 17.0 for Researchers</div>
+              <div class="modal-book-meta">International Book House · 2011 · ISBN 978-81-910642-5-4</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">09</div>
+            <div>
+              <div class="modal-book-title">Research Methodology</div>
+              <div class="modal-book-meta">International Book House · 2011 · ISBN 978-81-910642-7-8</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">10</div>
+            <div>
+              <div class="modal-book-title">Marketing Research</div>
+              <div class="modal-book-meta">Excel Books · 2010 · ISBN 9788174463456</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">11</div>
+            <div>
+              <div class="modal-book-title">Sales and Distribution Management</div>
+              <div class="modal-book-meta">Excel Books · 2010 · ISBN 9788174468703</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">12</div>
+            <div>
+              <div class="modal-book-title">Retail Management</div>
+              <div class="modal-book-meta">Wisdom Publications · 2007 · ISBN 9788189547264</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">13</div>
+            <div>
+              <div class="modal-book-title">Marketing Management</div>
+              <div class="modal-book-meta">Sultan Chand &amp; Sons · 2005 · ISBN 9788180545894</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">14</div>
+            <div>
+              <div class="modal-book-title">Business Economics: Theory &amp; Applications</div>
+              <div class="modal-book-meta">International Book House · ISBN 9788191064247</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">15</div>
+            <div>
+              <div class="modal-book-title">Brand Management: Text and Cases (An Indian Perspective)</div>
+              <div class="modal-book-meta">Himalaya Publishing House · ISBN 9788183181754</div>
+            </div>
+          </div>
+
+          <div class="modal-book-item">
+            <div class="modal-book-num">16</div>
+            <div>
+              <div class="modal-book-title">Rural Marketing: Text and Cases</div>
+              <div class="modal-book-meta">Wisdom Publications · 2004 · ISBN 9788189547042</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    // Wrap everything in DOMContentLoaded so elements exist when JS runs
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // ── Nav scroll effect ──
+      const nav = document.getElementById('main-nav');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 40);
+      }, { passive: true });
+
+      // ── Scroll-reveal ──
+      const revealEls = document.querySelectorAll(
+        '.timeline-item, .pub-card, .book-card, .scholar-card, .project-item, .conf-item, .award-card, .membership-table tr'
+      );
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const siblings = Array.from(entry.target.parentElement.children);
+            const idx = siblings.indexOf(entry.target);
+            entry.target.style.transitionDelay = `${idx * 0.07}s`;
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      revealEls.forEach(el => observer.observe(el));
+
+      // ── Mobile nav toggle ──
+      document.getElementById('menuBtn').addEventListener('click', function () {
+        const links = document.querySelector('.nav-links');
+        const isOpen = links.style.display === 'flex';
+        links.style.display = isOpen ? 'none' : 'flex';
+        links.style.flexDirection = 'column';
+        links.style.position = 'absolute';
+        links.style.top = '68px';
+        links.style.left = '0';
+        links.style.right = '0';
+        links.style.background = 'var(--ivory)';
+        links.style.padding = '1.5rem 2.5rem';
+        links.style.borderBottom = '1px solid var(--rule)';
+        links.style.gap = '1.2rem';
+        links.style.zIndex = '200';
+      });
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          document.querySelector('.nav-links').style.display = 'none';
+        });
+      });
+
+      // ── Modal logic ──
+      function openModal(modal) {
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        modal.querySelector('.modal-close').focus();
+      }
+      function closeModal(modal) {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+      }
+
+      const pubsModal  = document.getElementById('pubsModal');
+      const booksModal = document.getElementById('booksModal');
+
+      document.getElementById('openPubsModal').addEventListener('click',  () => openModal(pubsModal));
+      document.getElementById('openBooksModal').addEventListener('click', () => openModal(booksModal));
+
+      [pubsModal, booksModal].forEach(modal => {
+        modal.addEventListener('click', e => {
+          if (e.target.hasAttribute('data-close')) closeModal(modal);
+        });
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          if (!pubsModal.hidden)  closeModal(pubsModal);
+          if (!booksModal.hidden) closeModal(booksModal);
+        }
+      });
+
+    }); // end DOMContentLoaded
+  </script>
+</body>
+</html>
